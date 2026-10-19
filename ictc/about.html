@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Fletch &amp; Fern Outfitters</title>
+  <meta name="description" content="About the fictional Fletch & Fern Outfitters.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <p class="demo-banner">School project demo store – no real products, payments or accounts.</p>
+
+  <!-- Shared header: same on every page -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">🏹</span> Fletch &amp; Fern</a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <form class="header-search" id="header-search" role="search">
+        <label for="header-q" class="skip-link">Search products</label>
+        <input id="header-q" type="search" placeholder="Search gear…">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a class="cart-link" href="cart.html">Cart <span class="cart-count">0</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <h1>About us</h1>
+        <p>A small, fictional outfitter for archers and outdoor lovers.</p>
+      </div>
+    </section>
+    <div class="container prose">
+      <p>Fletch &amp; Fern Outfitters is an imaginary store created for a school web-development project. Our pretend shop helps new archers find safe, well-explained gear and gives experienced archers a tidy place to restock arrows, targets and trail equipment.</p>
+      <p>The name comes from <em>fletching</em> – the feathers or vanes that steady an arrow – and the ferns that grow along forest trails.</p>
+      <div class="values">
+        <div class="offer"><strong>Beginner friendly</strong>Plain-language descriptions for every product.</div>
+        <div class="offer"><strong>Safety first</strong>We encourage lessons at a local club before shooting.</div>
+        <div class="offer"><strong>Outdoors for all</strong>Gear for backyards, ranges and woodland trails.</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Shared footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Fletch &amp; Fern Outfitters – a fictional store made for a school web-development assignment.</p>
+      <p><a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="products.html">Shop</a></p>
+    </div>
+  </footer>
+
+  <!-- data.js must load before main.js because main.js uses PRODUCTS -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

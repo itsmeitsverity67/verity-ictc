@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | Fletch &amp; Fern Outfitters</title>
+  <meta name="description" content="Your shopping cart.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <p class="demo-banner">School project demo store – no real products, payments or accounts.</p>
+
+  <!-- Shared header: same on every page -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">🏹</span> Fletch &amp; Fern</a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <form class="header-search" id="header-search" role="search">
+        <label for="header-q" class="skip-link">Search products</label>
+        <input id="header-q" type="search" placeholder="Search gear…">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a class="cart-link" href="cart.html">Cart <span class="cart-count">0</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <h1>Your cart</h1>
+        <p>Your cart is saved in this browser, even after reloading.</p>
+      </div>
+    </section>
+    <div class="container">
+      <div id="cart-items" aria-live="polite"></div>
+      <div class="cart-summary" id="cart-summary" hidden>
+        <p>Total: <strong id="cart-total">$0.00</strong></p>
+        <a class="btn btn-primary" href="checkout.html">Continue to checkout</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Shared footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Fletch &amp; Fern Outfitters – a fictional store made for a school web-development assignment.</p>
+      <p><a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="products.html">Shop</a></p>
+    </div>
+  </footer>
+
+  <!-- data.js must load before main.js because main.js uses PRODUCTS -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

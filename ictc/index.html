@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Fletch &amp; Fern Outfitters</title>
+  <meta name="description" content="Original archery and outdoor gear demo store.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <p class="demo-banner">School project demo store – no real products, payments or accounts.</p>
+
+  <!-- Shared header: same on every page -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">🏹</span> Fletch &amp; Fern</a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <form class="header-search" id="header-search" role="search">
+        <label for="header-q" class="skip-link">Search products</label>
+        <input id="header-q" type="search" placeholder="Search gear…">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a class="cart-link" href="cart.html">Cart <span class="cart-count">0</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero banner -->
+    <section class="hero">
+      <div class="container">
+        <h1>Gear up for the quiet hours in the woods.</h1>
+        <p>Bows, arrows, targets and trail-ready outdoor gear chosen for beginners and seasoned archers alike.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="products.html">Shop all gear</a>
+          <a class="btn btn-secondary" href="about.html">Our story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offers -->
+    <section class="section container" aria-labelledby="offers-title">
+      <h2 id="offers-title">This season's offers</h2>
+      <div class="offer-strip">
+        <div class="offer"><strong>Free range day</strong>Demo offer: free target with any bow.</div>
+        <div class="offer"><strong>Beginner bundle</strong>Starter bow + arrows + quiver, explained in-store.</div>
+        <div class="offer"><strong>Trail ready</strong>10% off outdoor gear (example promotion).</div>
+      </div>
+    </section>
+
+    <!-- Categories link to the catalog with a filter applied -->
+    <section class="section container" aria-labelledby="cat-title">
+      <h2 id="cat-title">Shop by category</h2>
+      <div class="category-cards">
+        <a class="category-card" href="products.html?cat=Bows"><span aria-hidden="true">🏹</span>Bows</a>
+        <a class="category-card" href="products.html?cat=Arrows"><span aria-hidden="true">➶</span>Arrows</a>
+        <a class="category-card" href="products.html?cat=Accessories"><span aria-hidden="true">🎒</span>Accessories</a>
+        <a class="category-card" href="products.html?cat=Targets"><span aria-hidden="true">🎯</span>Targets</a>
+        <a class="category-card" href="products.html?cat=Outdoor%20Gear"><span aria-hidden="true">🌲</span>Outdoor Gear</a>
+      </div>
+    </section>
+
+    <!-- Featured products are inserted by renderFeatured() in main.js -->
+    <section class="section container" aria-labelledby="featured-title">
+      <div class="section-title">
+        <h2 id="featured-title">Featured gear</h2>
+        <a href="products.html">See all products →</a>
+      </div>
+      <div class="product-grid" id="featured-grid"></div>
+    </section>
+  </main>
+
+  <!-- Shared footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Fletch &amp; Fern Outfitters – a fictional store made for a school web-development assignment.</p>
+      <p><a href="about.html">About</a> · <a href="contact.html">Contact</a> · <a href="products.html">Shop</a></p>
+    </div>
+  </footer>
+
+  <!-- data.js must load before main.js because main.js uses PRODUCTS -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
